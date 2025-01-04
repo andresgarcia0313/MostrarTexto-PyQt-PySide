@@ -1,8 +1,8 @@
 # pylint: disable=no-name-in-module
 # pylint: disable=missing-module-docstring
 # pylint: disable=missing-class-docstring
-
-# Importamos las clases de PySide6 para crear una aplicación de escritorio
+# pylint: disable=missing-function-docstring
+# Importamos las clases de PySide6 para crear una aplicación de escritorio.
 from PySide6.QtWidgets import QApplication, QMainWindow
 # Importamos las clases del modelo, la vista y el controlador
 from model.text_model import TextModel
@@ -25,6 +25,8 @@ if __name__ == "__main__":
     main_window.setCentralWidget(view)
     # Ponemos un título a la ventana
     main_window.setWindowTitle("Software")
+    # Establecemos un tamaño fijo para la ventana
+    main_window.setFixedSize(400, 150)
     # Mostramos la ventana al usuario
     main_window.show()
     # Iniciamos la aplicación para que espere y responda a eventos del usuario

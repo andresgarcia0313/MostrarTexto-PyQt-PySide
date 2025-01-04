@@ -8,6 +8,6 @@ class TextModel:
         # Inicializamos el texto con un valor por defecto
         self.text = "Texto inicial"
 
-    def update_text(self):
-        # Actualizamos el texto con un nuevo valor
-        self.text = "Texto actualizado"
+    def update_text(self, new_text):
+        # Actualizamos el texto con el nuevo valor proporcionado
+        self.text = new_text
